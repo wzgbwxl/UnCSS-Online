@@ -14,6 +14,7 @@ class MyDocument extends Document {
           <meta charSet="UTF-8" />
           <meta name="viewport" content="width=device-width" />
           <meta name="description" content="在线一键去除多余的CSS代码，CV编程党必备神器" />
+          <meta name="theme-color" content="#9b4dca" />
           <link rel="icon" href="/static/img/favicon.ico" />
         </Head>
         <body>
