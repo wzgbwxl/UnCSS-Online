@@ -13,8 +13,8 @@ class MyDocument extends Document {
         <Head>
           <meta charSet="UTF-8" />
           <meta name="viewport" content="width=device-width" />
-          <meta name="description" content="在线取消CSS样式！" />
-          <meta name="theme-color" content="#9b4dca" />
+          <meta name="keywords" content="UnCSS Online,在线去除CSS" />
+          <meta name="description" content="在线一键去除多余的CSS代码，CV编程党必备神器" />
           <link rel="icon" href="/static/img/favicon.ico" />
         </Head>
         <body>
