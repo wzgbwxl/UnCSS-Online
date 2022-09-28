@@ -59,52 +59,16 @@ const Homepage: NextPage = () => {
       <header className="header">
         <h1>UnCSS Online!</h1>
         <p>
-          <strong>Simply UnCSS your styles online!</strong>
+          <strong>在线取消多余CSS样式！</strong>
         </p>
-        <a href="https://github.com/pajasevi/UnCSS-Online" className="github-corner" aria-hidden="true">
-          <svg
-            width="64"
-            height="64"
-            viewBox="0 0 250 250"
-            style={{
-              fill: "#9b4dca",
-              color: "#fff",
-              position: "absolute",
-              zIndex: 200,
-              top: 0,
-              border: 0,
-              left: 0,
-              transform: "scale(-1, 1)",
-            }}
-          >
-            <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z" />
-            <path
-              d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2"
-              fill="currentColor"
-              style={{ transformOrigin: "130px 106px" }}
-              className="octo-arm"
-            />
-            <path
-              d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z"
-              fill="currentColor"
-              className="octo-body"
-            />
-          </svg>
-        </a>
       </header>
       <main className="container">
-        <h3>Usage:</h3>
+        <h3>用法:</h3>
         <ul>
-          <li>Copy&amp;paste your HTML and CSS into boxes below</li>
-          <li>Click button</li>
-          <li>Wait for magic to happen</li>
-          <li>
-            Unused CSS{" "}
-            <a href="https://www.youtube.com/watch?v=DgS4DD0CgHs" rel="noopener" target="_blank">
-              is gone
-            </a>
-            , take the rest and use it!
-          </li>
+          <li>将HTML和CSS复制并粘贴到下面的框中</li>
+          <li>点击清除多余代码按钮</li>
+          <li>下面是见证奇迹的时刻</li>
+          <li>未使用的CSS已经消失了！</li>
         </ul>
 
         {error && (
@@ -117,12 +81,12 @@ const Homepage: NextPage = () => {
         <form id="uncss-form" onSubmit={handleSubmit}>
           <div className="row">
             <div className="column">
-              <label htmlFor="inputHtml">Your HTML</label>
-              <textarea placeholder="Insert your HTML here" rows={20} name="inputHtml" id="inputHtml" ref={inputHtml} />
+              <label htmlFor="inputHtml">你的HTML代码</label>
+              <textarea placeholder="在此处插入HTML代码" rows={20} name="inputHtml" id="inputHtml" ref={inputHtml} />
             </div>
             <div className="column">
-              <label htmlFor="inputCss">Your CSS</label>
-              <textarea placeholder="Insert your CSS here" rows={20} name="inputCss" id="inputCss" ref={inputCss} />
+              <label htmlFor="inputCss">你的CSS代码</label>
+              <textarea placeholder="在此处插入CSS代码" rows={20} name="inputCss" id="inputCss" ref={inputCss} />
             </div>
           </div>
           <div className="text-center">
@@ -132,15 +96,15 @@ const Homepage: NextPage = () => {
               type="submit"
               disabled={loading}
             >
-              UnCSS my styles
+              清除多余代码
             </button>
           </div>
         </form>
         <div className="row">
           <div className="column column-80 column-offset-10">
-            <label htmlFor="outputCss">Your shortened CSS</label>
+            <label htmlFor="outputCss">缩短后的CSS</label>
             <textarea
-              placeholder="Take your shortened CSS and use it!"
+              placeholder="缩短后的CSS"
               rows={20}
               name="outputCss"
               id="outputCss"
@@ -163,18 +127,17 @@ const Homepage: NextPage = () => {
           </div>
         </div>
 
-        <h3>Advanced usage</h3>
+        <h3>高级使用</h3>
         <p>
-          For advanced options please consider adding UnCSS to your devstack -{" "}
+          对于高级选项，请考虑将 UNCSS 添加到您的开发堆栈中 -{" "}
           <a href="https://github.com/ben-eb/gulp-uncss">Gulp</a>,{" "}
           <a href="https://github.com/addyosmani/grunt-uncss">Grunt</a>,{" "}
           <a href="https://github.com/RyanZim/postcss-uncss">PostCSS</a>.
         </p>
 
-        <h3>What is this good for?</h3>
+        <h3>这个工具有什么用？</h3>
         <p>
-          Do you have static 404 or 500 page, bundled styles for the whole site and you need only couple of CSS for
-          these static pages to work? Well, here you have the tool for that. You're welcome.
+          CV必备！！
         </p>
       </main>
       <footer className="footer clearfix">
@@ -186,6 +149,10 @@ const Homepage: NextPage = () => {
             |{" "}
             <a href="https://github.com/uncss/uncss" rel="noreferrer noopener" target="_blank">
               UnCSS
+            </a>{" "}
+            |{" "}
+            <a href="https://yeelz.com" target="_blank">
+              野路子博客
             </a>
           </span>
           <span className="float-right">
