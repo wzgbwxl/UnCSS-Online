@@ -24,8 +24,8 @@ const handler: NextApiHandler<Response> = async (req, res) => {
   const data = req.body;
 
   try {
-    if (!data.inputHtml) throw new Error("Cannot process empty HTML");
-    if (!data.inputCss) throw new Error("Cannot process empty CSS");
+    if (!data.inputHtml) throw new Error("无法处理空HTML");
+    if (!data.inputCss) throw new Error("无法处理空CSS");
 
     const html = data.inputHtml.replace(/<script\b[^<]*(?:(?!<\/script>)<[^<]*)*<\/script>/gi, "");
 
