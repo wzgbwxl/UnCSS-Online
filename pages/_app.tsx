@@ -14,7 +14,7 @@ export default class MyApp extends App {
     return (
       <React.Fragment>
         <Head>
-          <title>UnCSS Online!</title>
+          <title>UnCSS Online 在线去除多余的CSS</title>
         </Head>
         <Component {...pageProps} />
       </React.Fragment>
