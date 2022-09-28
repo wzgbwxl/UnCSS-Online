@@ -19,10 +19,10 @@ const Homepage: NextPage = () => {
     const clipboard = new ClipboardJS(clipboardButton.current);
 
     clipboard.on("success", () => {
-      setClipboardMessage("Copied to your clipboard");
+      setClipboardMessage("已复制到剪贴板");
     });
     clipboard.on("error", () => {
-      setClipboardMessage("Press Command+C to copy");
+      setClipboardMessage("按Command+C复制");
     });
   }, []);
 
@@ -36,8 +36,8 @@ const Homepage: NextPage = () => {
     };
 
     try {
-      if (!data.inputHtml) throw new Error("Cannot process empty HTML");
-      if (!data.inputCss) throw new Error("Cannot process empty CSS");
+      if (!data.inputHtml) throw new Error("无法处理空HTML");
+      if (!data.inputCss) throw new Error("无法处理空CSS");
 
       const response = await axios.post<{ outputCss: string }>(apiUrl, data);
 
@@ -59,7 +59,7 @@ const Homepage: NextPage = () => {
       <header className="header">
         <h1>UnCSS Online!</h1>
         <p>
-          <strong>在线取消多余CSS样式！</strong>
+          <strong>在线清除多余的CSS样式！</strong>
         </p>
       </header>
       <main className="container">
@@ -121,7 +121,7 @@ const Homepage: NextPage = () => {
               data-clipboard-target="#outputCss"
               ref={clipboardButton}
             >
-              Copy to clipboard
+              复制到剪贴板
             </button>
             {clipboardMessage && <p id="js-clipboard-message">{clipboardMessage}</p>}
           </div>
@@ -153,12 +153,6 @@ const Homepage: NextPage = () => {
             |{" "}
             <a href="https://yeelz.com" target="_blank">
               野路子博客
-            </a>
-          </span>
-          <span className="float-right">
-            Made with &hearts; by{" "}
-            <a href="https://twitter.com/pajasevi" rel="noreferrer noopener" target="_blank">
-              @pajasevi
             </a>
           </span>
         </div>
