@@ -153,7 +153,7 @@ const Homepage: NextPage = () => {
             |{" "}
             <a href="https://yeelz.com" target="_blank">
               野路子博客
-            </a>
+            </a>{" "}
             |{" "}
             <a href="https://tool.yeelz.com" target="_blank">
               野路子工具箱
