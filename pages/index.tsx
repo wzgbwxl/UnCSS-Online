@@ -161,7 +161,6 @@ const Homepage: NextPage = () => {
           </span>
         </div>
       </footer>
-      <div class="tool-logo tool-r20"><a href="https://tool.yeelz.com/" target="_blank"><img src="https://tool.yeelz.com/zb_users/theme/yeelz/function/tool/codetoimg/img/logo.svg" alt="野路子工具箱" width="181" height="54" ></a></div>
     </React.Fragment>
   );
 };
