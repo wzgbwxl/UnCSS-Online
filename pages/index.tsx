@@ -155,8 +155,12 @@ const Homepage: NextPage = () => {
               野路子博客
             </a>{" "}
             |{" "}
-            <a href="https://tool.yeelz.com" target="_blank">
+            <a href="https://yeelz.com/box/" target="_blank">
               野路子工具箱
+            </a>{" "}
+            |{" "}
+            <a href="https://gebilaoli.com/" target="_blank">
+              隔壁老李
             </a>
           </span>
         </div>
