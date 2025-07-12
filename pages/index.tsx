@@ -147,10 +147,6 @@ const Homepage: NextPage = () => {
               Github
             </a>{" "}
             |{" "}
-            <a href="https://github.com/uncss/uncss" rel="noreferrer noopener" target="_blank">
-              UnCSS
-            </a>{" "}
-            |{" "}
             <a href="https://yeelz.com" target="_blank">
               野路子博客
             </a>{" "}
