@@ -143,10 +143,6 @@ const Homepage: NextPage = () => {
       <footer className="footer clearfix">
         <div className="container">
           <span className="float-left">
-            <a href="https://github.com/pajasevi/UnCSS-Online" rel="noreferrer noopener" target="_blank">
-              Github
-            </a>{" "}
-            |{" "}
             <a href="https://yeelz.com" target="_blank">
               野路子博客
             </a>{" "}
