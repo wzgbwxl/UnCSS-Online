@@ -157,6 +157,10 @@ const Homepage: NextPage = () => {
             |{" "}
             <a href="https://gebilaoli.com/" target="_blank">
               隔壁老李
+            </a>{" "}
+            |{" "}
+            <a href="https://zbp.cool/" target="_blank">
+              智博酷
             </a>
           </span>
         </div>
